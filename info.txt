@@ -1,0 +1,10 @@
+
+[Breaking Bad]
+season = 4
+episode = 16
+finished = true
+
+[TBBT]
+season = 3
+episode = 15
+finished = false
