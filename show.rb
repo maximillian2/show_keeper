@@ -11,22 +11,38 @@ class Show
 	end
     
 	def add_show()
+
+    #TODO: make check() here
+
     print 'New show name: '
-    @new_show = gets.chomp.capitalize
-	
+    @new_show = '[' + $stdin.gets.chomp.split(' ').collect { |i| i.capitalize}.join(' ') + ']'
+    puts @new_show
+
     print 'Season: '
-    @new_season = gets.chomp
-	
+    @new_season = 'season = ' + $stdin.gets.chomp
+	  puts @new_season
+
     print 'Episode: ' 
-		@new_episode = gets.chomp
-    
-		# add show
-		# soon
+		@new_episode = 'episode = ' + $stdin.gets.chomp
+    puts @new_episode
+
+    print 'Finished? (true/false): '
+    @new_finished = 'finished = ' + $stdin.gets.chomp
+
+    @space = "\n"
+    @file_to_add_show = File.open(@file_name, 'a') # => to write only from the end of file
+
+    # write to file using formatting as in config file
+    @file_to_add_show.write(@space + @space + @new_show + @space + @new_season + @space \
+                          + @new_episode + @space + @new_finished + @space)
+    @file_to_add_show.close
+
+    reset()
 	end
 
 	def checked_update(update)
     case update
-      when 'season', 's', 'episode', 'e', 'finish', 'f'
+      when 'season', 's', 'episode', 'e', 'finish', 'f', 'name', 'n'
         return true
       else
         return false
@@ -74,6 +90,11 @@ class Show
 			puts "#{index+1}) [#{@config[group.to_s]['finished'] == 'true' ? "\u2713".encode('utf-8') : "\u2717".encode('utf-8')}] " \
            "#{group} -> s.#{@config[group.to_s]['season']} ep.#{@config[group.to_s]['episode']}"
 		end
+  end
+
+  def reset()
+    @config = ParseConfig.new(@file_name)
+    puts 'Reset finished.'
   end
 
   def sync()
@@ -135,11 +156,24 @@ class Show
   end
 
   def update_name(show_name)
-    # soon
+    # print 'New name: '
+    # updated_name = $stdin.gets.chomp
+    # @config.get_groups.each_with_index do |group, index|
+    #   if group == show_name
+    #     @config.get_groups[index] = updated_name
+    #     break
+    #   end
+    # end
+    #
+    # ## ERROR HERE!!!1
+    # sync()
+
   end
 
-  private :checked_update, :checked_show_number, :find_show_name, :update_season, :update_episode, :sync
-
+  ## TODO: organize 'private' section
+  private :checked_update, :checked_show_number, :find_show_name
+  private :update_season, :update_episode, :update_name
+  private :reset, :sync
 end		# class Show
 
 if __FILE__ == $PROGRAM_NAME
@@ -156,19 +190,19 @@ if __FILE__ == $PROGRAM_NAME
 		# parse part
     case input
       when 'add', 'a'
-        show.add_show
+        show.add_show()
 
       when 'print', 'show', 'p', 's'
-        show.print_shows
+        show.print_shows()
 
       when 'modify', 'update', 'm', 'u'
-        show.update
+        show.update()
 
       when 'exit', 'quit', 'e', 'q'
         exit
 
       else
-        puts 'Incorrect input!'
+        puts 'Try again!'
     end
 
   end
