@@ -7,10 +7,10 @@ require 'parseconfig'
 class Show
 	def initialize(file)
     @file_name = file
-		@config = ParseConfig.new(file)
+		@config = ParseConfig.new(@file_name)
 	end
     
-	def add_show
+	def add_show()
     print 'New show name: '
     @new_show = gets.chomp.capitalize
 	
@@ -24,29 +24,51 @@ class Show
 		# soon
 	end
 
-	def check_update(update)
-		# soon
-	end	
-	
-	def check_show_number(show_number)
-		# soon
+	def checked_update(update)
+    case update
+      when 'season', 's', 'episode', 'e', 'finish', 'f'
+        return true
+      else
+        return false
+    end
+
 	end
+	
+	def checked_show_number(show_number)
+	  return true if show_number < @config.get_groups.length+1
+    false
+  end
 
   def checked_limits(input)
     input.to_i < 99 && input.to_i > 1
   end
 
-  def finish(show_number)
-    #soon
+  def find_show_name(show_number)
+    @config.get_groups.each_with_index do | group, index |
+      if index+1 == show_number
+       return group
+      end
+    end
   end
 
-  def greet
+  def finish(show_name)
+    if @config[show_name]['finished'] == 'true'
+      @config[show_name]['finished'] = 'false'
+    else
+      @config[show_name]['finished'] = 'true'
+    end
+
+    sync()
+
+  end
+
+  def greet()
     puts 'Available commands:'
     puts '{a}dd, {p}rint/{s}how, {u}pdate/{m}odify, {e}xit/{q}uit '
   end
 
-	def print_shows
-    puts 'SHOES:'
+	def print_shows()
+    puts 'SHOWS:'
 
     @config.get_groups.each_with_index do |group, index|
 			puts "#{index+1}) [#{@config[group.to_s]['finished'] == 'true' ? "\u2713".encode('utf-8') : "\u2717".encode('utf-8')}] " \
@@ -54,70 +76,69 @@ class Show
 		end
   end
 
-  def sync
-
+  def sync()
     file = File.open(@file_name, 'w')
     @config.write(file)
     puts 'Sync finished.'
     file.close
   end
 
-  def update 
+  def update()
     print 'Show number: '
     show_number = $stdin.gets.chomp.to_i
-		check_show_number(show_number)
+		return unless checked_show_number(show_number)
 
-    print 'New [s]eason, [e]pisode or [f]inish show: '
+    print 'New {s}eason, {e}pisode, show {n}ame or {f}inish (toggle) show: '
     update = $stdin.gets.chomp.downcase
-		check_update(update)
+		return unless checked_update(update)
+
+    show_name = find_show_name(show_number)
 
     case update
       when 'season', 's'
-        update_season(show_number)
+        update_season(show_name)
 
       when 'episode', 'e'
-        update_episode(show_number)
+        update_episode(show_name)
 
       when 'finish', 'f'
-        finish(show_number)
+        finish(show_name)
+
+      when 'name', 'n'
+        update_name(show_name)
+
       else
         puts 'Try again!'
     end
   end
   
-	def update_season(show_number)
+	def update_season(show_name)
     print 'New season: '
     updated_season = $stdin.gets.chomp
     return unless checked_limits(updated_season)
 
-    @config.get_groups.each_with_index do | group, index |
-      if index+1 == show_number
-        @config[group]['season'] = updated_season
-        break
-      end
-    end
+    @config[show_name]['season'] = updated_season
 
     sync()
 
 	end
 	
-	def update_episode(show_number)
+	def update_episode(show_name)
     print 'New episode: '
     updated_episode = $stdin.gets.chomp
     return unless checked_limits(updated_episode)
 
-    @config.get_groups.each_with_index do | group, index |
-      if index+1 == show_number
-        @config[group]['episode'] = updated_episode
-        break
-      end
-    end
+    @config[show_name]['episode'] = updated_episode
 
     sync()
 
   end
 
-  private :update_season, :update_episode, :check_update, :check_show_number, :sync
+  def update_name(show_name)
+    # soon
+  end
+
+  private :checked_update, :checked_show_number, :find_show_name, :update_season, :update_episode, :sync
 
 end		# class Show
 
