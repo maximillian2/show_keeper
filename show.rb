@@ -88,7 +88,7 @@ class Show
 
     @config.get_groups.each_with_index do |group, index|
 			puts "#{index+1}) [#{@config[group.to_s]['finished'] == 'true' ? "\u2713".encode('utf-8') : "\u2717".encode('utf-8')}] " \
-           "#{group} -> s.#{@config[group.to_s]['season']} ep.#{@config[group.to_s]['episode']}"
+           "#{group} #{"\u2799".encode('utf-8')} s.#{@config[group.to_s]['season']} ep.#{@config[group.to_s]['episode']}"
 		end
   end
 
