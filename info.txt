@@ -8,3 +8,32 @@ finished = true
 season = 3
 episode = 15
 finished = false
+[example]
+season = 3
+episode = 4
+finished = false
+
+[example]
+season = wow
+episode = eifmiemf
+finished = false
+
+[Hello]
+season = 3
+episode = 4
+finished = true
+
+[512l]
+season = 3
+episode = 4
+finished = true
+
+[Hello]
+season = 31
+episode = 2
+finished = true
+
+[Hello3]
+season = 3
+episode = 4
+finished = true
