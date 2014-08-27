@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>search_index.js - RDoc Documentation</title>
+
+<link href="../../fonts.css" rel="stylesheet">
+<link href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script src="../../js/jquery.js"></script>
+<script src="../../js/navigation.js"></script>
+<script src="../../js/search_index.js"></script>
+<script src="../../js/search.js"></script>
+<script src="../../js/searcher.js"></script>
+<script src="../../js/darkfish.js"></script>
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../table_of_contents.html#pages">Pages</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../README_md.html">README</a>
+  
+    <li><a href="../../doc/README_md_html.html">README_md.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/ReleaseNote_html_html.html">ReleaseNote_html.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/ReleaseNote_txt_html.html">ReleaseNote_txt.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/ReleaseInfo_html_html.html">ReleaseInfo_html.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/fonts_css_html.html">fonts_css.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/index_html_html.html">index_html.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/darkfish_js_html.html">darkfish_js.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/jquery_js_html.html">jquery_js.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/navigation_js_html.html">navigation_js.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/search_index_js_html.html">search_index_js.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/search_js_html.html">search_js.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/searcher_js_html.html">searcher_js.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/rdoc_css_html.html">rdoc_css.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/table_of_contents_html_html.html">table_of_contents_html.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Release/ReleaseInfo_html.html">ReleaseInfo.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/ReleaseNote_html_html.html">ReleaseNote_html.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/ReleaseNote_txt_html.html">ReleaseNote_txt.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/ReleaseInfo_html_html.html">ReleaseInfo_html.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/fonts_css_html.html">fonts_css.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/index_html_html.html">index_html.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/darkfish_js_html.html">darkfish_js.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/jquery_js_html.html">jquery_js.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/navigation_js_html.html">navigation_js.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/search_index_js_html.html">search_index_js.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/search_js_html.html">search_js.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/searcher_js_html.html">searcher_js.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/rdoc_css_html.html">rdoc_css.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/table_of_contents_html_html.html">table_of_contents_html.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Release/ReleaseInfo_html.html">ReleaseInfo.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/ReleaseNote_html_html.html">ReleaseNote_html.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/ReleaseNote_txt_html.html">ReleaseNote_txt.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/ReleaseInfo_html_html.html">ReleaseInfo_html.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/fonts_css_html.html">fonts_css.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/index_html_html.html">index_html.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/darkfish_js_html.html">darkfish_js.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/jquery_js_html.html">jquery_js.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/navigation_js_html.html">navigation_js.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/search_index_js_html.html">search_index_js.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/search_js_html.html">search_js.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/searcher_js_html.html">searcher_js.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/rdoc_css_html.html">rdoc_css.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/table_of_contents_html_html.html">table_of_contents_html.html</a>
+  
+    <li><a href="../../doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Release/ReleaseInfo_html.html">ReleaseInfo.html</a>
+  
+    <li><a href="../../doc/Show_html.html">Show.html</a>
+  
+    <li><a href="../../doc/doc/README_md_html_html.html">README_md_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/ReleaseNote_html_html_html.html">ReleaseNote_html_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/ReleaseNote_txt_html_html.html">ReleaseNote_txt_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/ReleaseInfo_html_html_html.html">ReleaseInfo_html_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/fonts_css_html_html.html">fonts_css_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/index_html_html_html.html">index_html_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/darkfish_js_html_html.html">darkfish_js_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/jquery_js_html_html.html">jquery_js_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/navigation_js_html_html.html">navigation_js_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/search_index_js_html_html.html">search_index_js_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/search_js_html_html.html">search_js_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/searcher_js_html_html.html">searcher_js_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/rdoc_css_html_html.html">rdoc_css_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/table_of_contents_html_html_html.html">table_of_contents_html_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Release/ReleaseInfo_html_html.html">ReleaseInfo_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/ReleaseNote_html_html_html.html">ReleaseNote_html_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/ReleaseNote_txt_html_html.html">ReleaseNote_txt_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/ReleaseInfo_html_html_html.html">ReleaseInfo_html_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/fonts_css_html_html.html">fonts_css_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/index_html_html_html.html">index_html_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/darkfish_js_html_html.html">darkfish_js_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/jquery_js_html_html.html">jquery_js_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/navigation_js_html_html.html">navigation_js_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/search_index_js_html_html.html">search_index_js_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/search_js_html_html.html">search_js_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/searcher_js_html_html.html">searcher_js_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/rdoc_css_html_html.html">rdoc_css_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/table_of_contents_html_html_html.html">table_of_contents_html_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Release/ReleaseInfo_html_html.html">ReleaseInfo_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/ReleaseNote_html_html_html.html">ReleaseNote_html_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/ReleaseNote_txt_html_html.html">ReleaseNote_txt_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/ReleaseInfo_html_html_html.html">ReleaseInfo_html_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/fonts_css_html_html.html">fonts_css_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/index_html_html_html.html">index_html_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/darkfish_js_html_html.html">darkfish_js_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/jquery_js_html_html.html">jquery_js_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/navigation_js_html_html.html">navigation_js_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/search_index_js_html_html.html">search_index_js_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/search_js_html_html.html">search_js_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/searcher_js_html_html.html">searcher_js_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/rdoc_css_html_html.html">rdoc_css_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/table_of_contents_html_html_html.html">table_of_contents_html_html.html</a>
+  
+    <li><a href="../../doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Release/ReleaseInfo_html_html.html">ReleaseInfo_html.html</a>
+  
+    <li><a href="../../doc/doc/Show_html_html.html">Show_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/README_md_html_html_html.html">README_md_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/ReleaseNote_html_html_html_html.html">ReleaseNote_html_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/ReleaseNote_txt_html_html_html.html">ReleaseNote_txt_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/ReleaseInfo_html_html_html_html.html">ReleaseInfo_html_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/fonts_css_html_html_html.html">fonts_css_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/index_html_html_html_html.html">index_html_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/darkfish_js_html_html_html.html">darkfish_js_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/jquery_js_html_html_html.html">jquery_js_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/navigation_js_html_html_html.html">navigation_js_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/search_index_js_html_html_html.html">search_index_js_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/search_js_html_html_html.html">search_js_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/searcher_js_html_html_html.html">searcher_js_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/rdoc_css_html_html_html.html">rdoc_css_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/table_of_contents_html_html_html_html.html">table_of_contents_html_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Release/ReleaseInfo_html_html_html.html">ReleaseInfo_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/ReleaseNote_html_html_html_html.html">ReleaseNote_html_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/ReleaseNote_txt_html_html_html.html">ReleaseNote_txt_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/ReleaseInfo_html_html_html_html.html">ReleaseInfo_html_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/fonts_css_html_html_html.html">fonts_css_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/index_html_html_html_html.html">index_html_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/darkfish_js_html_html_html.html">darkfish_js_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/jquery_js_html_html_html.html">jquery_js_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/navigation_js_html_html_html.html">navigation_js_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/search_index_js_html_html_html.html">search_index_js_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/search_js_html_html_html.html">search_js_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/searcher_js_html_html_html.html">searcher_js_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/rdoc_css_html_html_html.html">rdoc_css_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/table_of_contents_html_html_html_html.html">table_of_contents_html_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Release/ReleaseInfo_html_html_html.html">ReleaseInfo_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/ReleaseNote_html_html_html_html.html">ReleaseNote_html_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/ReleaseNote_txt_html_html_html.html">ReleaseNote_txt_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/ReleaseInfo_html_html_html_html.html">ReleaseInfo_html_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/fonts_css_html_html_html.html">fonts_css_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/index_html_html_html_html.html">index_html_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/darkfish_js_html_html_html.html">darkfish_js_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/jquery_js_html_html_html.html">jquery_js_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/navigation_js_html_html_html.html">navigation_js_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/search_index_js_html_html_html.html">search_index_js_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/search_js_html_html_html.html">search_js_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/searcher_js_html_html_html.html">searcher_js_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/rdoc_css_html_html_html.html">rdoc_css_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/table_of_contents_html_html_html_html.html">table_of_contents_html_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Release/ReleaseInfo_html_html_html.html">ReleaseInfo_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/Show_html_html_html.html">Show_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/fonts_css_html_html.html">fonts_css_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/index_html_html_html.html">index_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/info_txt_html_html_html.html">info_txt_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/js/darkfish_js_html_html.html">darkfish_js_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/js/jquery_js_html_html.html">jquery_js_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/js/navigation_js_html_html.html">navigation_js_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/js/search_index_js_html_html.html">search_index_js_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/js/search_js_html_html.html">search_js_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/js/searcher_js_html_html.html">searcher_js_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/rdoc_css_html_html.html">rdoc_css_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/release_info_txt_html_html_html.html">release_info_txt_html_html.html</a>
+  
+    <li><a href="../../doc/doc/doc/table_of_contents_html_html_html.html">table_of_contents_html_html.html</a>
+  
+    <li><a href="../../doc/doc/fonts_css_html.html">fonts_css.html</a>
+  
+    <li><a href="../../doc/doc/index_html_html.html">index_html.html</a>
+  
+    <li><a href="../../doc/doc/info_txt_html_html.html">info_txt_html.html</a>
+  
+    <li><a href="../../doc/doc/js/darkfish_js_html.html">darkfish_js.html</a>
+  
+    <li><a href="../../doc/doc/js/jquery_js_html.html">jquery_js.html</a>
+  
+    <li><a href="../../doc/doc/js/navigation_js_html.html">navigation_js.html</a>
+  
+    <li><a href="../../doc/doc/js/search_index_js_html.html">search_index_js.html</a>
+  
+    <li><a href="../../doc/doc/js/search_js_html.html">search_js.html</a>
+  
+    <li><a href="../../doc/doc/js/searcher_js_html.html">searcher_js.html</a>
+  
+    <li><a href="../../doc/doc/rdoc_css_html.html">rdoc_css.html</a>
+  
+    <li><a href="../../doc/doc/release_info_txt_html_html.html">release_info_txt_html.html</a>
+  
+    <li><a href="../../doc/doc/table_of_contents_html_html.html">table_of_contents_html.html</a>
+  
+    <li><a href="../../doc/fonts_css.html">fonts.css</a>
+  
+    <li><a href="../../doc/index_html.html">index.html</a>
+  
+    <li><a href="../../doc/info_txt_html.html">info_txt.html</a>
+  
+    <li><a href="../../doc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li><a href="../../doc/js/jquery_js.html">jquery.js</a>
+  
+    <li><a href="../../doc/js/navigation_js.html">navigation.js</a>
+  
+    <li><a href="../../doc/js/search_js.html">search.js</a>
+  
+    <li><a href="../../doc/js/search_index_js.html">search_index.js</a>
+  
+    <li><a href="../../doc/js/searcher_js.html">searcher.js</a>
+  
+    <li><a href="../../doc/rdoc_css.html">rdoc.css</a>
+  
+    <li><a href="../../doc/release_info_txt_html.html">release_info_txt.html</a>
+  
+    <li><a href="../../doc/table_of_contents_html.html">table_of_contents.html</a>
+  
+    <li><a href="../../info_txt.html">info</a>
+  
+    <li><a href="../../release_info_txt.html">release_info</a>
+  
+    <li><a href="../../spec/test_txt.html">test</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page doc/js/search_index.js">
+
+<p>var search_data = {“index”:{“<a
+href=""show","add_show()","checked_limits()","finish()","greet()","new()","print_shows()","update()","readme","readme_md.html","releasenote_html.html","releasenote_txt.html","releaseinfo_html.html","fonts_css.html","index_html.html","darkfish_js.html","jquery_js.html","navigation_js.html","search_index_js.html","search_js.html","searcher_js.html","rdoc_css.html","table_of_contents_html.html","releaseinfo.html","releasenote_html.html","releasenote_txt.html","releaseinfo_html.html","fonts_css.html","index_html.html","darkfish_js.html","jquery_js.html","navigation_js.html","search_index_js.html","search_js.html","searcher_js.html","rdoc_css.html","table_of_contents_html.html","releaseinfo.html","releasenote_html.html","releasenote_txt.html","releaseinfo_html.html","fonts_css.html","index_html.html","darkfish_js.html","jquery_js.html","navigation_js.html","search_index_js.html","search_js.html","searcher_js.html","rdoc_css.html","table_of_contents_html.html","releaseinfo.html","show.html","readme_md_html.html","releasenote_html_html.html","releasenote_txt_html.html","releaseinfo_html_html.html","fonts_css_html.html","index_html_html.html","darkfish_js_html.html","jquery_js_html.html","navigation_js_html.html","search_index_js_html.html","search_js_html.html","searcher_js_html.html","rdoc_css_html.html","table_of_contents_html_html.html","releaseinfo_html.html","releasenote_html_html.html","releasenote_txt_html.html","releaseinfo_html_html.html","fonts_css_html.html","index_html_html.html","darkfish_js_html.html","jquery_js_html.html","navigation_js_html.html","search_index_js_html.html","search_js_html.html","searcher_js_html.html","rdoc_css_html.html","table_of_contents_html_html.html","releaseinfo_html.html","releasenote_html_html.html","releasenote_txt_html.html","releaseinfo_html_html.html","fonts_css_html.html","index_html_html.html","darkfish_js_html.html","jquery_js_html.html","navigation_js_html.html","search_index_js_html.html","search_js_html.html","searcher_js_html.html","rdoc_css_html.html","table_of_contents_html_html.html","releaseinfo_html.html","show_html.html","fonts_css.html","index_html.html","info_txt_html.html","darkfish_js.html","jquery_js.html","navigation_js.html","search_index_js.html","search_js.html","searcher_js.html","rdoc_css.html","release_info_txt_html.html","table_of_contents_html.html","fonts.css","index.html","info_txt.html","darkfish.js","jquery.js","navigation.js","search.js","search_index.js","searcher.js","rdoc.css","release_info_txt.html","table_of_contents.html","info","release_info"">searchIndex”:</a>,“<a
+href=""show","show#add_show()","show#checked_limits()","show#finish()","show#greet()","show::new()","show#print_shows()","show#update()","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""">longSearchIndex”:</a>,“info”:[[“Show”,“”,“Show.html”,“”,“&lt;p&gt;This
+class holds information about watched shows and can write it to file.nFor
+further changes it can
+…n”],[“add_show”,“Show”,“Show.html#method-i-add_show”,“()”,“&lt;p&gt;Add
+show to list of shows, then writes it to file and resets the file tonsee
+the
+changesn”],[“checked_limits”,“Show”,“Show.html#method-i-checked_limits”,“(input)”,“&lt;p&gt;Validate
+number given for
+season/episoden”],[“finish”,“Show”,“Show.html#method-i-finish”,“(show_name)”,“&lt;p&gt;Toggles
+show to finished/unfinished
+staten”],[“greet”,“Show”,“Show.html#method-i-greet”,“()”,“&lt;p&gt;Print
+out greeting each iteration to look over the
+commandsn”],[“new”,“Show”,“Show.html#method-c-new”,“(file)”,“&lt;p&gt;Remember
+file name and create instance of config file to work
+withn”],[“print_shows”,“Show”,“Show.html#method-i-print_shows”,“()”,“&lt;p&gt;Print
+out all shows in formatted
+wayn”],[“update”,“Show”,“Show.html#method-i-update”,“()”,“&lt;p&gt;Ask for
+information what to update and then launch methods after
+validatingninputn”],[“README”,“”,“README_md.html”,“”,“&lt;p&gt;show_keepern&lt;p&gt;Tool
+to save tv-shows watching
+progress.n”],[“README_md.html”,“”,“doc/README_md_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;README
+…n”],[“ReleaseNote_html.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/ReleaseNote_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseNote.html
+…n”],[“ReleaseNote_txt.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/ReleaseNote_txt_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseNote
+…n”],[“ReleaseInfo_html.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/ReleaseInfo_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseInfo.html
+…n”],[“fonts_css.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/fonts_css_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;fonts.css
+…n”],[“index_html.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/index_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;index.html
+…n”],[“darkfish_js.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/darkfish_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;darkfish.js
+…n”],[“jquery_js.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/jquery_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;jquery.js
+…n”],[“navigation_js.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/navigation_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;navigation.js
+…n”],[“search_index_js.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/search_index_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;search_index.js
+…n”],[“search_js.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/search_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;search.js
+…n”],[“searcher_js.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/searcher_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;searcher.js
+…n”],[“rdoc_css.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/rdoc_css_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;rdoc.css
+…n”],[“table_of_contents_html.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/table_of_contents_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;table_of_contents.html
+…n”],[“ReleaseInfo.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Release/ReleaseInfo_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseInfo
+…n”],[“ReleaseNote_html.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/ReleaseNote_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseNote.html
+…n”],[“ReleaseNote_txt.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/ReleaseNote_txt_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseNote
+…n”],[“ReleaseInfo_html.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/ReleaseInfo_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseInfo.html
+…n”],[“fonts_css.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/fonts_css_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;fonts.css
+…n”],[“index_html.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/index_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;index.html
+…n”],[“darkfish_js.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/darkfish_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;darkfish.js
+…n”],[“jquery_js.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/jquery_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;jquery.js
+…n”],[“navigation_js.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/navigation_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;navigation.js
+…n”],[“search_index_js.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/search_index_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;search_index.js
+…n”],[“search_js.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/search_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;search.js
+…n”],[“searcher_js.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/searcher_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;searcher.js
+…n”],[“rdoc_css.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/rdoc_css_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;rdoc.css
+…n”],[“table_of_contents_html.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/table_of_contents_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;table_of_contents.html
+…n”],[“ReleaseInfo.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Release/ReleaseInfo_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseInfo
+…n”],[“ReleaseNote_html.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/ReleaseNote_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseNote.html
+…n”],[“ReleaseNote_txt.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/ReleaseNote_txt_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseNote
+…n”],[“ReleaseInfo_html.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/ReleaseInfo_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseInfo.html
+…n”],[“fonts_css.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/fonts_css_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;fonts.css
+…n”],[“index_html.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/index_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;index.html
+…n”],[“darkfish_js.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/darkfish_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;darkfish.js
+…n”],[“jquery_js.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/jquery_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;jquery.js
+…n”],[“navigation_js.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/navigation_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;navigation.js
+…n”],[“search_index_js.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/search_index_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;search_index.js
+…n”],[“search_js.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/search_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;search.js
+…n”],[“searcher_js.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/searcher_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;searcher.js
+…n”],[“rdoc_css.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/rdoc_css_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;rdoc.css
+…n”],[“table_of_contents_html.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/table_of_contents_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;table_of_contents.html
+…n”],[“ReleaseInfo.html”,“”,“doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Release/ReleaseInfo_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseInfo
+…n”],[“Show.html”,“”,“doc/Show_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;class
+…n”],[“README_md_html.html”,“”,“doc/doc/README_md_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;README_md.html
+…n”],[“ReleaseNote_html_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/ReleaseNote_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseNote_html.html
+…n”],[“ReleaseNote_txt_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/ReleaseNote_txt_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseNote_txt.html
+…n”],[“ReleaseInfo_html_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/ReleaseInfo_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseInfo_html.html
+…n”],[“fonts_css_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/fonts_css_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;fonts_css.html
+…n”],[“index_html_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/index_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;index_html.html
+…n”],[“darkfish_js_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/darkfish_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;darkfish_js.html
+…n”],[“jquery_js_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/jquery_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;jquery_js.html
+…n”],[“navigation_js_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/navigation_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;navigation_js.html
+…n”],[“search_index_js_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/search_index_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;search_index_js.html
+…n”],[“search_js_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/search_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;search_js.html
+…n”],[“searcher_js_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/js/searcher_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;searcher_js.html
+…n”],[“rdoc_css_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/rdoc_css_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;rdoc_css.html
+…n”],[“table_of_contents_html_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Documentation/rdoc/table_of_contents_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;table_of_contents_html.html
+…n”],[“ReleaseInfo_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_42_18/Release/ReleaseInfo_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseInfo.html
+…n”],[“ReleaseNote_html_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/ReleaseNote_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseNote_html.html
+…n”],[“ReleaseNote_txt_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/ReleaseNote_txt_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseNote_txt.html
+…n”],[“ReleaseInfo_html_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/ReleaseInfo_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseInfo_html.html
+…n”],[“fonts_css_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/fonts_css_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;fonts_css.html
+…n”],[“index_html_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/index_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;index_html.html
+…n”],[“darkfish_js_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/darkfish_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;darkfish_js.html
+…n”],[“jquery_js_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/jquery_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;jquery_js.html
+…n”],[“navigation_js_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/navigation_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;navigation_js.html
+…n”],[“search_index_js_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/search_index_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;search_index_js.html
+…n”],[“search_js_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/search_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;search_js.html
+…n”],[“searcher_js_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/js/searcher_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;searcher_js.html
+…n”],[“rdoc_css_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/rdoc_css_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;rdoc_css.html
+…n”],[“table_of_contents_html_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Documentation/rdoc/table_of_contents_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;table_of_contents_html.html
+…n”],[“ReleaseInfo_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/IncludeRuby/2014_08_25_14_46_04/Release/ReleaseInfo_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseInfo.html
+…n”],[“ReleaseNote_html_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/ReleaseNote_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseNote_html.html
+…n”],[“ReleaseNote_txt_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/ReleaseNote_txt_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseNote_txt.html
+…n”],[“ReleaseInfo_html_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/ReleaseInfo_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseInfo_html.html
+…n”],[“fonts_css_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/fonts_css_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;fonts_css.html
+…n”],[“index_html_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/index_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;index_html.html
+…n”],[“darkfish_js_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/darkfish_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;darkfish_js.html
+…n”],[“jquery_js_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/jquery_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;jquery_js.html
+…n”],[“navigation_js_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/navigation_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;navigation_js.html
+…n”],[“search_index_js_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/search_index_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;search_index_js.html
+…n”],[“search_js_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/search_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;search_js.html
+…n”],[“searcher_js_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/js/searcher_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;searcher_js.html
+…n”],[“rdoc_css_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/rdoc_css_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;rdoc_css.html
+…n”],[“table_of_contents_html_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Documentation/rdoc/table_of_contents_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;table_of_contents_html.html
+…n”],[“ReleaseInfo_html.html”,“”,“doc/doc/Releases/x86_64-darwin13_0/1_0/Normal/2014_08_25_14_46_48/Release/ReleaseInfo_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;ReleaseInfo.html
+…n”],[“Show_html.html”,“”,“doc/doc/Show_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;Show.html
+…n”],[“fonts_css.html”,“”,“doc/doc/fonts_css_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;fonts.css
+…n”],[“index_html.html”,“”,“doc/doc/index_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;index.html
+…n”],[“info_txt_html.html”,“”,“doc/doc/info_txt_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;info_txt.html
+…n”],[“darkfish_js.html”,“”,“doc/doc/js/darkfish_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;darkfish.js
+…n”],[“jquery_js.html”,“”,“doc/doc/js/jquery_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;jquery.js
+…n”],[“navigation_js.html”,“”,“doc/doc/js/navigation_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;navigation.js
+…n”],[“search_index_js.html”,“”,“doc/doc/js/search_index_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;search_index.js
+…n”],[“search_js.html”,“”,“doc/doc/js/search_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;search.js
+…n”],[“searcher_js.html”,“”,“doc/doc/js/searcher_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;searcher.js
+…n”],[“rdoc_css.html”,“”,“doc/doc/rdoc_css_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;rdoc.css
+…n”],[“release_info_txt_html.html”,“”,“doc/doc/release_info_txt_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;release_info_txt.html
+…n”],[“table_of_contents_html.html”,“”,“doc/doc/table_of_contents_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;table_of_contents.html
+…n”],[“fonts.css”,“”,“doc/fonts_css.html”,“”,“n&lt;pre&gt;Copyright 2010,
+2012 Adobe Systems Incorporated (<a
+href="http://www.adobe.com/),\nwith">www.adobe.com/),nwith</a> Reserved
+Font Name &amp;quot;Source&amp;quot;.
+…&lt;/pre&gt;n”],[“index.html”,“”,“doc/index_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;RDoc
+…n”],[“info_txt.html”,“”,“doc/info_txt_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;info
+…n”],[“darkfish.js”,“”,“doc/js/darkfish_js.html”,“”,“n&lt;pre&gt;Darkfish
+Page Functionsn$Id: darkfish.js 53 2009-01-07 02:52:03Z deveiant $nnAuthor:
+Michael Granger
+…&lt;/pre&gt;n”],[“jquery.js”,“”,“doc/js/jquery_js.html”,“”,“n&lt;pre&gt;!n
+jQuery JavaScript Library v1.6.2n <a
+href="http://jquery.com/\n\n">jquery.com/nn</a> Copyright 2011, John Resign
+Dual licensed under
+…&lt;/pre&gt;n”],[“navigation.js”,“”,“doc/js/navigation_js.html”,“”,“n&lt;pre&gt;Navigation
+allows movement using the arrow keys through the search results.nnWhen
+using this library
+…&lt;/pre&gt;n”],[“search.js”,“”,“doc/js/search_js.html”,“”,“&lt;p&gt;Search
+= function(data, input, result) {nn&lt;pre&gt;this.data = data;nthis.$input
+= $(input);nthis.$result = $(result);
+…&lt;/pre&gt;n”],[“search_index.js”,“”,“doc/js/search_index_js.html”,“”,“&lt;p&gt;var
+search_data =n{“index”:{“<a
+href="“Show”,“”,“Show.html”,“”,“&lt;p&gt;This\n…\n"">searchIndex”:,“longSearchIndex”:,“info”:[</a>,[”searcher.js“,”“,”doc/js/searcher_js.html“,”“,”&lt;p&gt;Searcher
+= function(data) {nn&lt;pre&gt;this.data = data;nthis.handlers =
+[];&lt;/pre&gt;n&lt;p&gt;}n“],[”rdoc.css“,”“,”doc/rdoc_css.html“,”“,”n&lt;pre&gt;&amp;quot;Darkfish&amp;quot;
+Rdoc CSSn$Id: rdoc.css 54 2009-01-27 01:09:48Z deveiant $nnAuthor: Michael
+Granger &amp;lt;ged@FaerieMUD.org&amp;gt;
+…&lt;/pre&gt;n“],[”release_info_txt.html“,”“,”doc/release_info_txt_html.html“,”“,”&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta
+charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;release_info
+…n“],[”table_of_contents.html“,”“,”doc/table_of_contents_html.html“,”“,”&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta charset=“UTF-8”&amp;gt;n&lt;p&gt;&amp;lt;title&amp;gt;Table
+…n“],[”info“,”“,”info_txt.html“,”“,”&lt;p&gt;Breaking Bad &amp;mdash;
+season = 4 episode = 16 finished = truen&lt;p&gt;TBBT &amp;mdash; season =
+3 episode = 15 finished =
+falsennn“],[”release_info“,”“,”release_info_txt.html“,”“,”&lt;p&gt;RubyPackager::ReleaseInfo.new.nn&lt;pre
+class=&quot;ruby&quot;&gt;&lt;span
+class=&quot;ruby-identifier&quot;&gt;author&lt;/span&gt;(n  :&lt;span
+class=&quot;ruby-identifier&quot;&gt;name&lt;/span&gt; =&lt;span
+class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span
+class=&quot;ruby-string&quot;&gt;&amp;#39;Tymoshyk
+Maksym&amp;#39;&lt;/span&gt;,n  :&lt;span
+class=&quot;ruby-identifier&quot;&gt;email&lt;/span&gt; =&lt;span
+class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span
+class=&quot;ruby-string&quot;&gt;&amp;#39;maxi.ua.1996@gmail.com&amp;#39;&lt;/span&gt;,
+&lt;span
+class=&quot;ruby-operator&quot;&gt;…&lt;/span&gt;n&lt;/pre&gt;n“]]}}</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://rdoc.rubyforge.org">RDoc</a> 4.1.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
